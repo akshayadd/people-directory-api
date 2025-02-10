@@ -81,8 +81,9 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: peoples_api_production
-    username: peoples_api
+    host: dpg-cuko543tq21c73e9kbeg-a
+    database: people_directory_api
+    username: people_db_user
     password: <%= ENV["PEOPLES_API_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
